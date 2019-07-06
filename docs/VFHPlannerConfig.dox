@@ -1,0 +1,22 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~m_safety_dist_0ms" : \b [double] The minimum distance the robot is allowed to get to obstacles when stopped min: -inf, default: 100.0, max: inf
+- \b "~m_safety_dist_1ms" : \b [double] The minimum distance the robot is allowed to get to obstacles when stopped min: -inf, default: 100.0, max: inf
+- \b "~m_max_speed" : \b [double] The maximum allowable speed of the robot min: -inf, default: 200.0, max: inf
+- \b "~m_max_speed_narrow_opening" : \b [double] The maximum allowable speed of the robot through a narrow opening min: -inf, default: 200.0, max: inf
+- \b "~m_max_speed_wide_opening" : \b [double] The maximum allowable speed of the robot through a wide opening min: -inf, default: 300.0, max: inf
+- \b "~m_max_acceleration" : \b [double] The maximum allowable acceleration of the robot. min: -inf, default: 200.0, max: inf
+- \b "~m_min_turnrate" : \b [double] The minimum allowable turnrate of the robot. min: -inf, default: 40.0, max: inf
+- \b "~m_max_turnrate_0ms" : \b [double] The maximum allowable turnrate of the robot when stopped. min: -inf, default: 40.0, max: inf
+- \b "~m_max_turnrate_1ms" : \b [double] The maximum allowable turnrate of the robot when travelling 1 m/s. min: -inf, default: 40.0, max: inf
+- \b "~m_free_space_cutoff_0ms" : \b [double] The higher the value, the closer the robot will get to obstacles before avoiding (while stopped). min: -inf, default: 2000000.0, max: inf
+- \b "~m_free_space_cutoff_1ms" : \b [double] The higher the value, the closer the robot will get to obstacles before avoiding (when travelling 1 m/s.). min: -inf, default: 2000000.0, max: inf
+- \b "~m_obs_cutoff_0ms" : \b [double] histogram threshold min: -inf, default: 4000000.0, max: inf
+- \b "~m_obs_cutoff_1ms" : \b [double] histogram threshold min: -inf, default: 4000000.0, max: inf
+- \b "~m_weight_desired_dir" : \b [double] Bias for the robot to turn to move toward goal position. min: -inf, default: 5.0, max: inf
+- \b "~m_weight_current_dir" : \b [double] Bias for the robot to continue moving in current direction of travel min: -inf, default: 1.0, max: inf
+- \b "~m_robot_radius" : \b [double] robot radius, 300 min: -inf, default: 0, max: inf
+- \b "~restore_defaults" : \b [bool] Retore to the default configuration min: False, default: False, max: True
+

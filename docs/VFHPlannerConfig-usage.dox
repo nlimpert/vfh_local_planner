@@ -1,0 +1,23 @@
+\subsubsection usage Usage
+\verbatim
+<node name="vfh_local_planner" pkg="vfh_local_planner" type="vfh_local_planner">
+  <param name="m_safety_dist_0ms" type="double" value="100.0" />
+  <param name="m_safety_dist_1ms" type="double" value="100.0" />
+  <param name="m_max_speed" type="double" value="200.0" />
+  <param name="m_max_speed_narrow_opening" type="double" value="200.0" />
+  <param name="m_max_speed_wide_opening" type="double" value="300.0" />
+  <param name="m_max_acceleration" type="double" value="200.0" />
+  <param name="m_min_turnrate" type="double" value="40.0" />
+  <param name="m_max_turnrate_0ms" type="double" value="40.0" />
+  <param name="m_max_turnrate_1ms" type="double" value="40.0" />
+  <param name="m_free_space_cutoff_0ms" type="double" value="2000000.0" />
+  <param name="m_free_space_cutoff_1ms" type="double" value="2000000.0" />
+  <param name="m_obs_cutoff_0ms" type="double" value="4000000.0" />
+  <param name="m_obs_cutoff_1ms" type="double" value="4000000.0" />
+  <param name="m_weight_desired_dir" type="double" value="5.0" />
+  <param name="m_weight_current_dir" type="double" value="1.0" />
+  <param name="m_robot_radius" type="double" value="0" />
+  <param name="restore_defaults" type="bool" value="False" />
+</node>
+\endverbatim
+
